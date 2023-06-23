@@ -81,62 +81,6 @@ header .btn{
     display: none;
 }
 
-/*MEDIA QUERIS BARRA DE NAVEGACION*/
-@media (max-width: 991px){
-    header, header.down{
-        padding: 20px 40px;
-    }
-    header .btn{
-    
-    }
-
-    header .menu{
-    position: fixed;
-    background: #ffffff;
-    height: 100vh;
-    top: 0;
-    right: -100%;
-    transition: 0.5s;
-    transition-property: right;
-    padding-right: 15%;
-    }
-    
-    header .menu ul{
-        flex-direction: column;
-    }
-    
-    header .menu.active{
-    right: 0;
-    }
-
-    header .menu .close-btn{
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 25px;
-    }
-
-    header .menu a{
-    display: block;
-    font-size: 20px;
-    margin: 20px;
-    padding: 0 15px;
-    
-    }
-
-
-
-    
-}
-
-@media (max-width: 700px){
-    .section-main h1{
-    font-size: 50px;
-    line-height: 60px;
-    }
-    
-}
-
 .grid2 {display:grid;
     grid-template-columns: 50% 50%;}
 
@@ -145,20 +89,26 @@ header .btn{
 
 #texto1 {padding:20px;
             font-size:1.7em;
-        margin-top: 5%;}
+        margin-top: 5%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #353525;
+    }
 
 #texto2 {padding:20px;
             font-size:1.7em;
-        margin-top: 18%;}
+        margin-top: 18%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #353525;
+    }
 
 
 #hero{
     width: 100%;
     height: 100vh;
-    background-image: url(/images/katarinna.jpg);
+    background-image: url(../images/katarinna.jpg);
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.582), rgba(114, 114, 114, 0.5)), url("/images/katarinna.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.582), rgba(114, 114, 114, 0.5)), url("../images/katarinna.jpg");
 
 }
 
@@ -166,7 +116,7 @@ header .btn{
     font-size: 3rem;
     text-align:center;
     font-weight:bold;
-    color:rgb(0, 0, 0);
+    color:rgb(109, 98, 202);
     padding:4% 0;}
 
 
@@ -175,8 +125,8 @@ header .btn{
     margin:0 4%;
     text-indent:4rem;
     border-left:5px solid rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     }
-
     footer{
         bottom: 0;
         left: 0;
@@ -252,16 +202,59 @@ header .btn{
         opacity: 0.7;
     }
     
-
-
-
-
-
-
-
-
-
 /*MEDIA QUERIS */
+
+@media (max-width: 991px){
+    header, header.down{
+        padding: 20px 40px;
+    }
+
+    header .menu{
+    position: fixed;
+    background: #ffffff;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    transition: 0.5s;
+    transition-property: right;
+    padding-right: 15%;
+    }
+    
+    header .menu ul{
+        flex-direction: column;
+    }
+    
+    header .menu.active{
+    right: 0;
+    }
+
+    header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+    }
+
+    header .menu a{
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+    
+    }
+
+
+
+    
+}
+
+@media (max-width: 700px){
+    .section-main h1{
+    font-size: 50px;
+    line-height: 60px;
+    }
+    
+}
 
     
     @media only screen and (width<=1000px){
@@ -349,3 +342,4 @@ header .btn{
     }
 
     }
+
